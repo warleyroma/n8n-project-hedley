@@ -1,0 +1,13 @@
+FROM n8nio/n8n
+
+# Adicionando um volume (caso necessário para persistência de dados)
+VOLUME ["/home/node/.n8n"]
+
+# Definindo variáveis de ambiente, caso seja necessário
+ENV N8N_PORT=5678
+
+# Expondo a porta
+EXPOSE 5678
+
+# O comando padrão para rodar o serviço n8n
+CMD ["n8n"]
