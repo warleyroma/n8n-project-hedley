@@ -19,5 +19,5 @@ ENV DB_SQLITE_VACUUM_ON_STARTUP=true
 EXPOSE 5678
 
 # Comando para iniciar o n8n
-CMD ["n8n"]
+ENTRYPOINT ["n8n"]
 
