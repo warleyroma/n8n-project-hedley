@@ -1,13 +1,14 @@
 FROM n8nio/n8n
 
-# Adicionando um volume (caso necessário para persistência de dados)
-VOLUME ["/home/node/.n8n"]
+# Define o diretório de trabalho
+WORKDIR /home/node
 
-# Definindo variáveis de ambiente, caso seja necessário
-ENV N8N_PORT=5678
+# Copia as variáveis de ambiente (se quiser embutir, opcional)
+# COPY .env .env
 
-# Expondo a porta
+# Expõe a porta usada pelo n8n
 EXPOSE 5678
 
-# O comando padrão para rodar o serviço n8n
+# Comando para iniciar o n8n
 CMD ["n8n"]
+
