@@ -7,7 +7,8 @@ WORKDIR /home/node
 
 ENV N8N_BASIC_AUTH_ACTIVE=false
 ENV N8N_PORT=5678
-ENV GENERIC_TIMEZONE=America/Sao_Paulo
+ENV N8N_HOST=44.226.145.213
+ENV WEBHOOK_URL=https://n8n-project-hedley.onrender.com
 ENV DB_TYPE=sqlite
 ENV DB_SQLITE_VACUUM_ON_STARTUP=true
 
